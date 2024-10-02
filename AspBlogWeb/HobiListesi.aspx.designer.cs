@@ -10,7 +10,7 @@
 namespace AspBlogWeb {
     
     
-    public partial class AdminDeneyimler {
+    public partial class HobiListesi {
         
         /// <summary>
         /// Form1 control.

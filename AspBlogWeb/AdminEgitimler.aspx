@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.master" AutoEventWireup="true" CodeBehind="AdminDeneyimler.aspx.cs" Inherits="AspBlogWeb.AdminDeneyimler" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.master" AutoEventWireup="true" CodeBehind="AdminEgitimler.aspx.cs" Inherits="AspBlogWeb.AdminEgitimler" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <form id="Form1" runat="server">
+
+     <form id="Form1" runat="server">
 
         <table class="table table-bordered">
 
@@ -12,6 +12,7 @@
                 <th>BAŞLIK</th>
                 <th>ALT BAŞLIK</th>
                 <th>AÇIKLAMA</th>
+                <th>GENEL NOT ORT.</th>
                 <th>TARİH</th>
                 <th>İŞLEMLER</th>
             </tr>
@@ -24,10 +25,11 @@
                             <td><%# Eval("BASLIK") %></td>
                             <td><%# Eval("ALTBASLIK") %></td>
                             <td><%# Eval("ACIKLAMA") %></td>
+                            <td><%# Eval("GNOT") %></td>
                             <td><%# Eval("TARIH") %></td>
                             <td>
-                                <asp:HyperLink NavigateUrl='<%#"AdminDeneyimSil.aspx?ID=" + Eval("ID") %>' ID="HyperLink1" runat="server" CssClass="btn btn-danger">Sil</asp:HyperLink>
-                                <asp:HyperLink NavigateUrl='<%#"AdminDeneyimGüncelle.aspx?ID=" + Eval("ID") %>' ID="HyperLink2" runat="server" CssClass="btn btn-warning">Güncelle</asp:HyperLink>
+                                <asp:HyperLink NavigateUrl='<%#"AdminEgitimSil.aspx?ID=" + Eval("ID") %>' ID="HyperLink1" runat="server" CssClass="btn btn-danger">Sil</asp:HyperLink>
+                                <asp:HyperLink NavigateUrl='<%#"AdminEgitimGüncelle.aspx?ID=" + Eval("ID") %>' ID="HyperLink2" runat="server" CssClass="btn btn-warning">Güncelle</asp:HyperLink>
                             </td>
                         </tr>
 
@@ -37,6 +39,7 @@
             </tbody>
         </table>
         <br />
-        <asp:HyperLink NavigateUrl="~/AdminDeneyimEkle.aspx" ID="HyperLink3" runat="server" CssClass="btn btn-primary">Deneyim Ekle</asp:HyperLink>
+        <asp:HyperLink NavigateUrl="~/AdminEgitimEkle.aspx" ID="HyperLink3" runat="server" CssClass="btn btn-primary">Eğitim Ekle</asp:HyperLink>
     </form>
+
 </asp:Content>

@@ -15,7 +15,7 @@
     <!-- Bootstrap CSS CDN -->
     <link href="AdminDosyalar/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Our Custom CSS -->
-    <link href="AdminDosyalar/StyleSheet2.css" rel="stylesheet" />
+    <link href="test.css" rel="stylesheet" />
 </head>
 <body>
     <div class="wrapper">
@@ -27,7 +27,7 @@
             </div>
 
             <ul class="list-unstyled components">
-                <li class="active">
+                <li>
                     <a href="Hakkımda.aspx">
                         <i class="glyphicon glyphicon-home"></i>
                         Hakkımda
@@ -38,25 +38,25 @@
                         <i class="glyphicon glyphicon-briefcase"></i>
                         Deneyimlerim
                     </a>
-                    <a href="#pageSubmenu">
+                    <a href="AdminEgitimler.aspx">
                         <i class="glyphicon glyphicon-education"></i>
                         Eğitim Hayatım
                     </a>                 
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="YetenekListesi.aspx">
                         <i class="glyphicon glyphicon-play"></i>
                         Yeteneklerim
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="HobiListesi.aspx">
                         <i class="glyphicon glyphicon-music"></i>
                         Hobilerim
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="KonferansListesi.aspx">
                         <i class="glyphicon glyphicon-book"></i>
                         Konferanslar
                     </a>
