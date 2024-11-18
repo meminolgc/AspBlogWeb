@@ -3,7 +3,6 @@
 <h2>Teknik İçerikler</h2>
 <ul>
 <li>MSSQL</li>
-<li>C# Web Forms</li>
 <li>Dataset Yapısı</li> 
 <li>HTML, CSS, Bootstrap</li>
 </ul>
